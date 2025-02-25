@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('https://wallpapers-clan.com/wp-content/uploads/2024/12/dodge-challenger-split-personality-desktop-wallpaper-preview.jpg') no-repeat center center/cover;
+  position: relative;
+  background-attachment:fixed;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  z-index: 1;
+}
+
+/* About Section */
+.about {
+  padding: 20px 40px;
+  background-color: #1e1e1e;
+  text-align: center;
+  height: 200px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+
+
+/* Vehicles Section */
+/* Section title styling */
+.vehicles h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: white;
+}
+
+/* Vehicle card container */
+.vehicles {
+  display: flex;
+  flex-direction: column; /* Stack the title above the cards */
+  align-items: center;
+  background-color: #121212;
+  padding: 40px 0;
+}
+
+/* Vehicle cards container styling */
+.vehicles > div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Vehicle card styling */
+.vehicle-card {
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.vehicle-card h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: red;
+}
+
+.vehicle-card p {
+  margin: 5px 0 0;
+  font-size: 1em;
+}
+
+/* Ensure section title stays on top */
+.vehicles > h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Contact Section */
+/* Entire section for background */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  background: url('https://wallpapers.com/images/hd/dodge-challenger-4k-kx8we598xrzu27t4.jpg') no-repeat center center/cover; /* Background image */
+  padding: 20px; /* Adds spacing on smaller screens */
+}
+
+/* Form container styling */
+.contact-form {
+  background: rgba(0, 0, 0, 0); /* Semi-transparent black for contrast */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  max-width: 400px; /* Restrict form size */
+  text-align: center;
+}
+
+/* Form title */
+.contact-form h2 {
+  font-size: 2rem;
+  color: red;
+  margin-bottom: 20px;
+}
+
+/* Form input fields */
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Submit button styling */
+.contact-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background: darkred;
+}
+
+/* Footer text and button */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footer button {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.footer button:hover {
+  background: darkred;
+}
